@@ -33,17 +33,6 @@
 <?php endif; ?>
 
 <?php 
-if (isset($_SESSION['timeout']))
-{
-    if (time() >= ($_SESSION['timeout'] + $timeout))
-    {
-        echo '<script>document.location.href="?logout"</script>';
-    }
-    else $_SESSION['timeout'] = time();
-}
-?>
-
-<?php 
 if (isset($_SESSION['valid']))
 {
     if (isset($_POST['sendPartnerRequest']))
