@@ -23,7 +23,7 @@
         <?php if ($useTheme === TRUE): ?>
             <link href="css/bootstrap-theme.min.css" rel="stylesheet">
         <?php endif ?>
-        <link href="css/starter-template.css" rel="stylesheet">
+        <link href="css/ospartner.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/gh-fork-ribbon.min.css" rel="stylesheet">
         <link href="css/login.css" rel="stylesheet">
@@ -51,4 +51,4 @@
                 <a href="https://github.com/djphil/ospartner" target="_blank">Fork me on GitHub</a>
             </div>
         </div>
-        <?php include_once("login-horizontal.php"); ?>
+        <div class="row">

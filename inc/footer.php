@@ -6,7 +6,7 @@
         
         </div>
     </footer>
-
+    </div> <!-- /.row -->
     </div><!-- /.container -->
 
     <!-- Bootstrap core JavaScript
