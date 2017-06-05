@@ -46,7 +46,7 @@ Coming soon ...
 
 <article>
     <h2>Donation</h2>
-    <?php include_once("inc/paypal.php"); ?>
+    <p><?php include_once("inc/paypal.php"); ?></p>
 </article>
 
 </section>
