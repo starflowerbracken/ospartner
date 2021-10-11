@@ -57,7 +57,7 @@ if (isset($_SESSION['valid']))
                 $sql->execute();
                 $rows = $sql->rowCount();
 
-                if ($rows == 0)
+                if ($rows >= 0)
                 {
                     // INSERT INTO PARTNER DATABASE
                     $sql = $db->prepare("
