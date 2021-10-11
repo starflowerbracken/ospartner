@@ -79,8 +79,8 @@ if (isset($_SESSION['valid']))
                     echo '<div class="alert alert-success">';
                     echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
                     echo '<i class="glyphicon glyphicon-ok"></i> ';
-                    echo 'Your Partner request was sent successfully to '.getUsernamebyUUID($db, $_POST['sendPartnerRequest']).', ';
-                    echo 'now you need to wait approval ...';
+                    echo 'Your partner request was sent successfully to '.getUsernamebyUUID($db, $_POST['sendPartnerRequest']).', ';
+                    echo 'now you need to wait for approval ...';
                     echo '</div>';
                 }
 
@@ -88,7 +88,7 @@ if (isset($_SESSION['valid']))
                 {
                     echo '<div class="alert alert-danger alert-anim">';
                     echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
-                    echo getUsernamebyUUID($db, $_POST['sendPartnerRequest']).' have already a partnering ...';
+                    echo getUsernamebyUUID($db, $_POST['sendPartnerRequest']).' have already got a partner ...';
                     echo '</div>';
                 }
             }
@@ -97,7 +97,7 @@ if (isset($_SESSION['valid']))
             {
                 echo '<div class="alert alert-danger alert-anim">';
                 echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
-                echo 'No Partner with youself ...';
+                echo 'You cannot partner with youself ...';
                 echo '</div>';
             }
         }
@@ -106,7 +106,7 @@ if (isset($_SESSION['valid']))
         {
             echo '<div class="alert alert-danger alert-anim">';
             echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
-            echo 'Please select one Partner first ...';
+            echo 'Please select one partner first ...';
             echo '</div>';
         }
     }
@@ -231,8 +231,8 @@ if (isset($_SESSION['valid']))
         echo '<div class="alert alert-warning">';
         echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
         echo '<i class="glyphicon glyphicon-ok"></i> ';
-        echo 'You ignore Partner request from '.getUsernamebyUUID($db, $_POST['ignorePartnerRequest']).', ';
-        echo 'now '.getUsernamebyUUID($db, $_POST['ignorePartnerRequest']).' need to wait approval again ...';
+        echo 'You ignore a partner request from '.getUsernamebyUUID($db, $_POST['ignorePartnerRequest']).', ';
+        echo 'now '.getUsernamebyUUID($db, $_POST['ignorePartnerRequest']).' needs to wait for approval again ...';
         echo '</div>';
     }
 
@@ -384,7 +384,7 @@ if (isset($_SESSION['valid']))
             else if ($profilePartnerStatus == "2" && $profileUuid == $_SESSION['useruuid'])
             {
                 echo '<p>You have <span class="badge">'.$rows.'</span> ';
-                echo 'waiting approval Partner request ...</p>';
+                echo 'partner request waiting for approval ...</p>';
                 echo '<td>'.getUsernamebyUUID($db, $profilePartner).'</td>';
                 echo '<td>'.getUsernamebyUUID($db, $profileUuid).'</td>';
                 echo '<td>'.$profilePartnerText.'</td>';
@@ -403,8 +403,8 @@ if (isset($_SESSION['valid']))
 
             else if ($profilePartnerStatus == "2" && $profilePartner == $_SESSION['useruuid'])
             {
-                echo '<p>You have actually <span class="badge">'.$rows.'</span> ';
-                echo 'waiting approval Partner request</p>';
+                echo '<p>You have <span class="badge">'.$rows.'</span> ';
+                echo 'partner request waiting for approval</p>';
                 echo '<td>'.getUsernamebyUUID($db, $profilePartner).'</td>';
                 echo '<td>'.getUsernamebyUUID($db, $profileUuid).'</td>';
                 echo '<td>'.$profilePartnerText.'</td>';
@@ -428,7 +428,7 @@ if (isset($_SESSION['valid']))
     // NO PARTNER YET
     else if ($rows == 0 && !isset($_POST['addNewPartner']))
     {
-        echo '<p>You have actually <span class="badge">'.$rows.'</span> Partner ...</p>';
+        echo '<p>You have <span class="badge">'.$rows.'</span> partner ...</p>';
         echo '<form action="" method="post">';
         echo '<input class=hidden name="owner" value="'.$_SESSION['useruuid'].'">';
         echo '<button class="btn btn-success" type="submit" name="addNewPartner" value="">';
