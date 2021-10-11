@@ -306,7 +306,7 @@ if (isset($_SESSION['valid']))
             if ($profilePartnerStatus == "0" && $profileUuid == $_SESSION['useruuid'])
             {
                 echo '<p>You have <span class="badge">'.$rows.'</span> ';
-                echo 'wainting approval request from user ';
+                echo 'waiting for approval request from user ';
                 echo '<strong>'.getUsernamebyUUID($db, $profilePartner).'</strong></p>';
                 echo '<td>'.getUsernamebyUUID($db, $profilePartner).'</td>';
                 echo '<td>'.getUsernamebyUUID($db, $profileUuid).'</td>';
@@ -329,7 +329,7 @@ if (isset($_SESSION['valid']))
             else if ($profilePartnerStatus == "0" && $profilePartner == $_SESSION['useruuid'])
             {
                 echo '<p>You have <span class="badge">'.$rows.'</span> ';
-                echo 'wainting approval request from user ';
+                echo 'waiting for approval request from user ';
                 echo '<strong>'.getUsernamebyUUID($db, $profileUuid).'</strong></p>';
                 echo '<td>'.getUsernamebyUUID($db, $profilePartner).'</td>';
                 echo '<td>'.getUsernamebyUUID($db, $profileUuid).'</td>';
