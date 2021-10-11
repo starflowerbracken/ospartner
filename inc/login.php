@@ -12,7 +12,7 @@ if (isset($_POST['login']) && !empty($_POST['username']) && !empty($_POST['passw
 
     $sql = $db->prepare("
         SELECT *
-        FROM useraccounts
+        FROM UserAccounts
         WHERE FirstName = ?
         AND LastName = ?
     ");
