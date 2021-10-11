@@ -88,7 +88,7 @@ if (isset($_SESSION['valid']))
                 {
                     echo '<div class="alert alert-danger alert-anim">';
                     echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
-                    echo getUsernamebyUUID($db, $_POST['sendPartnerRequest']).' has already got a partner ...';
+                    echo getUsernamebyUUID($db, $_POST['sendPartnerRequest']).' has already got a partner.';
                     echo '</div>';
                 }
             }
