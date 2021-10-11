@@ -231,8 +231,8 @@ if (isset($_SESSION['valid']))
         echo '<div class="alert alert-warning">';
         echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
         echo '<i class="glyphicon glyphicon-ok"></i> ';
-        echo 'You ignore a partner request from '.getUsernamebyUUID($db, $_POST['ignorePartnerRequest']).', ';
-        echo 'now '.getUsernamebyUUID($db, $_POST['ignorePartnerRequest']).' needs to wait for approval again.';
+        echo 'You ignore a partner request from '.getUsernamebyUUID($db, $_POST['ignorePartnerRequest']).'. ';
+        echo 'Now '.getUsernamebyUUID($db, $_POST['ignorePartnerRequest']).' needs to wait for approval again.';
         echo '</div>';
     }
 
