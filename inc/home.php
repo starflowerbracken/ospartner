@@ -106,7 +106,7 @@ if (isset($_SESSION['valid']))
         {
             echo '<div class="alert alert-danger alert-anim">';
             echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
-            echo 'Please select one partner first.';
+            echo 'Please select a partner.';
             echo '</div>';
         }
     }
