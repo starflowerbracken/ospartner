@@ -79,8 +79,8 @@ if (isset($_SESSION['valid']))
                     echo '<div class="alert alert-success">';
                     echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
                     echo '<i class="glyphicon glyphicon-ok"></i> ';
-                    echo 'Your partner request was sent successfully to '.getUsernamebyUUID($db, $_POST['sendPartnerRequest']).', ';
-                    echo 'now you need to wait for approval ...';
+                    echo 'Your partner request was sent successfully to '.getUsernamebyUUID($db, $_POST['sendPartnerRequest']).'. ';
+                    echo 'Now you need to wait for approval ...';
                     echo '</div>';
                 }
 
