@@ -8,7 +8,7 @@ function getUsernameByUUID($db, $uuid)
 {
     $sql = $db->prepare("
         SELECT *
-        FROM useraccounts
+        FROM UserAccounts
         WHERE PrincipalID = '".$uuid."'
     ");
 
