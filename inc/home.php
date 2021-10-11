@@ -188,8 +188,8 @@ if (isset($_SESSION['valid']))
         echo '<div class="alert alert-success">';
         echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
         echo '<i class="glyphicon glyphicon-ok"></i> ';
-        echo 'You accept Partner request from '.getUsernamebyUUID($db, $_POST['acceptPartnerRequest']).', ';
-        echo 'you are now Inword Partner\'s with '.getUsernamebyUUID($db, $_POST['acceptPartnerRequest']).' ...';
+        echo 'You accept a partner request from '.getUsernamebyUUID($db, $_POST['acceptPartnerRequest']).', ';
+        echo 'you are now in-world partners with '.getUsernamebyUUID($db, $_POST['acceptPartnerRequest']).' ...';
         echo '</div>';
     }
 
