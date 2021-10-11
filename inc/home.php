@@ -2,7 +2,7 @@
     <h1><?php echo $ospartner; ?><span class="pull-right">Home</span></h1>
 <?php endif; ?>
 
-<!-- Fash Message -->
+<!-- Flash Message -->
 <?php if(isset($_SESSION['flash'])): ?>
     <?php foreach($_SESSION['flash'] as $type => $message): ?>
         <div class="alert alert-<?php echo $type; ?> alert-anim">
