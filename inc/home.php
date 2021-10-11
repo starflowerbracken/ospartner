@@ -117,7 +117,7 @@ if (isset($_SESSION['valid']))
         {
             $sql = $db->prepare("
                 SELECT *
-                FROM useraccounts
+                FROM UserAccounts
             ");
             $sql->execute();
 
