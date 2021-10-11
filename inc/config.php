@@ -2,7 +2,7 @@
 session_start();
 header('Content-Type: text/html; charset=utf-8');
 ini_set('magic_quotes_gpc', 0);
-$ospartner = "OpenSim Partner";
+$ospartner = "OpenSim Partners";
 $version = "0.1";
 $debug = TRUE;
 
