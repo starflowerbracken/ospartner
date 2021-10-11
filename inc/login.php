@@ -60,7 +60,7 @@ if (isset($_POST['login']) && !empty($_POST['username']) && !empty($_POST['passw
                             $_SESSION['valid'] = TRUE;
                             $_SESSION['username'] = $username;
                             $_SESSION['useruuid'] = $PrincipalID;
-                            $_SESSION['flash']['success'] = "You are connected succefully <strong>".$username."</strong>";
+                            $_SESSION['flash']['success'] = "You are connected successfully <strong>".$username."</strong>";
                         }
                         else $_SESSION['flash']['danger'] = "Wrong password ...";
                     }
