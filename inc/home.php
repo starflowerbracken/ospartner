@@ -80,7 +80,7 @@ if (isset($_SESSION['valid']))
                     echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
                     echo '<i class="glyphicon glyphicon-ok"></i> ';
                     echo 'Your partner request was sent successfully to '.getUsernamebyUUID($db, $_POST['sendPartnerRequest']).'. ';
-                    echo 'Now you need to wait for approval ...';
+                    echo 'Now you need to wait for approval.';
                     echo '</div>';
                 }
 
@@ -232,7 +232,7 @@ if (isset($_SESSION['valid']))
         echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
         echo '<i class="glyphicon glyphicon-ok"></i> ';
         echo 'You ignore a partner request from '.getUsernamebyUUID($db, $_POST['ignorePartnerRequest']).', ';
-        echo 'now '.getUsernamebyUUID($db, $_POST['ignorePartnerRequest']).' needs to wait for approval again ...';
+        echo 'now '.getUsernamebyUUID($db, $_POST['ignorePartnerRequest']).' needs to wait for approval again.';
         echo '</div>';
     }
 
@@ -384,7 +384,7 @@ if (isset($_SESSION['valid']))
             else if ($profilePartnerStatus == "2" && $profileUuid == $_SESSION['useruuid'])
             {
                 echo '<p>You have <span class="badge">'.$rows.'</span> ';
-                echo 'partner request waiting for approval ...</p>';
+                echo 'partner request waiting for approval.</p>';
                 echo '<td>'.getUsernamebyUUID($db, $profilePartner).'</td>';
                 echo '<td>'.getUsernamebyUUID($db, $profileUuid).'</td>';
                 echo '<td>'.$profilePartnerText.'</td>';
