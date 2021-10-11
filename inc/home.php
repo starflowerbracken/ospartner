@@ -44,7 +44,7 @@ if (isset($_SESSION['valid']))
                 if (isset($_POST['sendPartnerRequest']))
                 {
                     if (empty($_POST["comment"]))
-                        $comment = "No comment ...";
+                        $comment = "No comment.";
                     else $comment = $_POST["comment"];
                 }
 
@@ -97,7 +97,7 @@ if (isset($_SESSION['valid']))
             {
                 echo '<div class="alert alert-danger alert-anim">';
                 echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
-                echo 'You cannot partner with youself ...';
+                echo 'You cannot partner with youself.';
                 echo '</div>';
             }
         }
@@ -106,7 +106,7 @@ if (isset($_SESSION['valid']))
         {
             echo '<div class="alert alert-danger alert-anim">';
             echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
-            echo 'Please select one partner first ...';
+            echo 'Please select one partner first.';
             echo '</div>';
         }
     }
@@ -189,7 +189,7 @@ if (isset($_SESSION['valid']))
         echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
         echo '<i class="glyphicon glyphicon-ok"></i> ';
         echo 'You accept a partner request from '.getUsernamebyUUID($db, $_POST['acceptPartnerRequest']).'. ';
-        echo 'You are now in-world partners with '.getUsernamebyUUID($db, $_POST['acceptPartnerRequest']).' ...';
+        echo 'You are now in-world partners with '.getUsernamebyUUID($db, $_POST['acceptPartnerRequest']).'.';
         echo '</div>';
     }
 
@@ -263,8 +263,8 @@ if (isset($_SESSION['valid']))
         echo '<div class="alert alert-success">';
         echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
         echo '<i class="glyphicon glyphicon-ok"></i> ';
-        echo 'You decline Partner request from '.getUsernamebyUUID($db, $_POST['declinePartnerRequest']).', ';
-        echo getUsernamebyUUID($db, $_POST['declinePartnerRequest']).' is deleted ...';
+        echo 'You decline a partner request from '.getUsernamebyUUID($db, $_POST['declinePartnerRequest']).'. ';
+        echo getUsernamebyUUID($db, $_POST['declinePartnerRequest']).'\' request is deleted.';
         echo '</div>';
     }
 
@@ -347,7 +347,7 @@ if (isset($_SESSION['valid']))
 
             else if ($profilePartnerStatus == "1" && $profileUuid == $_SESSION['useruuid'])
             {
-                echo '<p>You have <span class="badge">'.$rows.'</span> approved partner ...</p>';
+                echo '<p>You have <span class="badge">'.$rows.'</span> approved partner.</p>';
                 echo '<td>'.getUsernamebyUUID($db, $profilePartner).'</td>';
                 echo '<td>'.getUsernamebyUUID($db, $profileUuid).'</td>';
                 echo '<td>'.$profilePartnerText.'</td>';
@@ -366,7 +366,7 @@ if (isset($_SESSION['valid']))
 
             else if ($profilePartnerStatus == "1" && $profilePartner == $_SESSION['useruuid'])
             {
-                echo '<p>You have <span class="badge">'.$rows.'</span> partner ...</p>';
+                echo '<p>You have <span class="badge">'.$rows.'</span> partner.</p>';
                 echo '<td>'.getUsernamebyUUID($db, $profilePartner).'</td>';
                 echo '<td>'.getUsernamebyUUID($db, $profileUuid).'</td>';
                 echo '<td>'.$profilePartnerText.'</td>';
@@ -428,7 +428,7 @@ if (isset($_SESSION['valid']))
     // NO PARTNER YET
     else if ($rows == 0 && !isset($_POST['addNewPartner']))
     {
-        echo '<p>You have <span class="badge">'.$rows.'</span> partner ...</p>';
+        echo '<p>You have <span class="badge">'.$rows.'</span> partner.</p>';
         echo '<form action="" method="post">';
         echo '<input class=hidden name="owner" value="'.$_SESSION['useruuid'].'">';
         echo '<button class="btn btn-success" type="submit" name="addNewPartner" value="">';
