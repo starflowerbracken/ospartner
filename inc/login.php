@@ -60,18 +60,18 @@ if (isset($_POST['login']) && !empty($_POST['username']) && !empty($_POST['passw
                             $_SESSION['valid'] = TRUE;
                             $_SESSION['username'] = $username;
                             $_SESSION['useruuid'] = $PrincipalID;
-                            $_SESSION['flash']['success'] = "You are connected successfully <strong>".$username."</strong>";
+                            $_SESSION['flash']['success'] = "You have logged in successfully, <strong>".$username."</strong>";
                         }
-                        else $_SESSION['flash']['danger'] = "Wrong password ...";
+                        else $_SESSION['flash']['danger'] = "Wrong password.";
                     }
-                    else $_SESSION['flash']['danger'] = "Invalid password ...";
+                    else $_SESSION['flash']['danger'] = "Invalid password.";
                 }
-                else $_SESSION['flash']['danger'] = "ID/Password no match ...";
+                else $_SESSION['flash']['danger'] = "ID/Password no match.";
             }
-            else $_SESSION['flash']['danger'] = "Invalid ID ...";
+            else $_SESSION['flash']['danger'] = "Invalid ID.";
         }
     }
-    else $_SESSION['flash']['danger'] = "Invalid username ...";
+    else $_SESSION['flash']['danger'] = "Invalid username.";
 }
 ?>
 
