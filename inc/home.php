@@ -125,7 +125,7 @@ if (isset($_SESSION['valid']))
             echo '<form class="form form-group" action="" method="post">';
             echo '<label for="sel1">Members list:</label>';
             echo '<select class="form-control" id="sel1" name="sendPartnerRequest">';
-            echo '<option value="" selected >Select one user</option>';
+            echo '<option value="" selected >Select a user</option>';
 
             while ($row = $sql->fetch(PDO::FETCH_ASSOC))
             {
